@@ -26,7 +26,7 @@ end
 
 200.times do
     doctor_id = Doctor.find(rand(1..20)) 
-    patient_id = Patient.find(rand(1..20))
+    patient_id = Patient.find(rand(1..100))
     Appointment.create!(doctor: doctor_id, patient: patient_id, date: ) 
 end
 

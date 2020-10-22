@@ -3,6 +3,7 @@ class CreateAppointments < ActiveRecord::Migration[6.0]
     create_table :appointments do |t|
       t.datetime :date
       t.timestamps
+      t.belongs_to :city, index: true
     end
   end
 end
